@@ -11791,3 +11791,40 @@ pre .code {
     .project-head { flex-direction: column; }
     .exp-icon { margin-bottom: 15px; }
 }
+
+
+/* === Portfolio v2: mature experience logos (use original portfolio icon images, not tiny line icons) === */
+.experience-logo-wrapper {
+    width: 92px;
+    min-width: 92px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.experience-logo {
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+    display: block;
+}
+
+.experience-item .col-md-1 {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+    .experience-logo-wrapper {
+        margin: 0 auto 16px auto;
+        width: 84px;
+        height: 84px;
+    }
+
+    .experience-logo {
+        width: 70px;
+        height: 70px;
+    }
+}
