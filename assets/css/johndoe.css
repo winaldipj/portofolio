@@ -11682,3 +11682,112 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+
+
+/* === Portfolio refresh: custom additions === */
+.btn-component { display: none !important; }
+.header .header-mono,
+.brand .brand-subtitle {
+    letter-spacing: .5px;
+}
+.about-card p {
+    line-height: 1.75;
+}
+.exp-icon {
+    width: 62px;
+    height: 62px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(244, 67, 54, 0.08);
+    color: #F44336;
+    font-size: 28px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.06);
+    margin-top: 3px;
+}
+.experience-item h6 {
+    font-weight: 700;
+}
+.resume-card-enhanced,
+.project-card-enhanced {
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.07);
+    transition: transform .22s ease, box-shadow .22s ease;
+}
+.resume-card-enhanced:hover,
+.project-card-enhanced:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 38px rgba(0,0,0,.11);
+}
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+.skill-box {
+    padding: 18px;
+    border: 1px solid rgba(0,0,0,.07);
+    border-radius: 16px;
+    background: #fff;
+}
+.skill-box h6 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #343a40;
+}
+.skill-box p {
+    margin-bottom: 0;
+    color: #6c757d;
+    line-height: 1.6;
+    font-size: 14px;
+}
+.skill-icon {
+    color: #F44336;
+    font-size: 24px;
+}
+.project-card-enhanced {
+    height: calc(100% - 3rem);
+}
+.project-head {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+.project-icon {
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(244, 67, 54, 0.08);
+    color: #F44336;
+    font-size: 24px;
+}
+.project-card-enhanced p {
+    line-height: 1.7;
+}
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+.project-tags span {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: rgba(244, 67, 54, 0.08);
+    color: #d63c32;
+    font-size: 12px;
+    font-weight: 600;
+}
+@media (max-width: 767.98px) {
+    .skill-grid { grid-template-columns: 1fr; }
+    .project-head { flex-direction: column; }
+    .exp-icon { margin-bottom: 15px; }
+}
